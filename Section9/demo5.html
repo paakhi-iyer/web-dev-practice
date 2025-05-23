@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .profile-card{
+      display: flex;
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: cornsilk;
+      max-width: 900px;
+      margin: 20px auto;
+      align-items: center;
+    }
+    .photo {
+      flex: 0 0 200px; /* fixed size instead of flex: 1 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+    .photo img {
+      width: 180px;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      object-fit: cover;
+}
+    .info{
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .photo {
+    max-width: 100%;
+  }
+  .info {
+    padding: 10px;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="photo">
+    <img src="./assets/my-image.JPG" alt="">
+  </div>
+    <div class="info">
+      <h2>Paakhi Iyer</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquid voluptate voluptates neque sed? Accusamus fugit officiis, culpa architecto assumenda aliquam ratione praesentium sit possimus quae delectus. Id velit sed nesciunt, sequi, atque ducimus quis magni aliquid necessitatibus dolorum odit molestiae fugiat maxime inventore vero magnam vel placeat doloremque repellendus debitis autem! Est eius aliquam blanditiis dolores vero doloribus neque, mollitia saepe laboriosam, illo, eveniet molestiae veritatis excepturi aut! Iste?</p>
+    </div>
+  </div>
+</body>
+</html>
